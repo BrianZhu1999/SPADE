@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ten supplementary films following SPADE from observed fields to governing equations and predictive tests.">
+  <meta name="theme-color" content="#f6f5f1">
+  <title>SPADE — From fields to equations</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' fill='%23232523'/%3E%3Ctext x='20' y='29' text-anchor='middle' font-family='Georgia' font-size='30' fill='white'%3ES%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css?v=6">
+  <script src="app.js?v=4" defer></script>
+</head>
+<body>
+  <a class="skip" href="#screening" data-i18n="skip">Skip to player</a>
+  <div class="page">
+    <header class="header" id="top">
+      <a class="wordmark" href="#top" aria-label="SPADE home" data-i18n-label="home">SPADE<span class="wordmark-dot" aria-hidden="true">.</span></a>
+      <span class="header-label" data-i18n="supplements">Supplementary films</span>
+      <nav aria-label="Page navigation" data-i18n-label="navigation"><a href="#screening" data-i18n="collection">The collection</a><a href="#study"><span data-i18n="study">The study</span> <span aria-hidden="true">↗</span></a></nav>
+      <button id="language-toggle" class="language-toggle" type="button" lang="zh-CN" aria-label="切换为中文">中文</button>
+    </header>
+
+    <main>
+      <section class="intro" aria-labelledby="headline">
+        <div><p class="eyebrow" data-i18n="eyebrow">A visual companion to SPADE</p><h1 id="headline"><span data-i18n="headline">From fields to equations</span><span class="punctuation">.</span></h1></div>
+        <div class="intro-note"><p><span data-i18n="introFirst">Watch physical laws emerge from data.</span><br> <span data-i18n="introSecond">Ten films on symbolic discovery and prediction.</span></p><span><span data-i18n="count">10 films</span> <span class="dot">·</span> <span data-i18n="totalTime">14 min 19 s</span></span></div>
+      </section>
+
+      <section class="screening" id="screening" aria-label="Supplementary movie collection" data-i18n-label="screening">
+        <div class="feature">
+          <div class="screen-top"><span id="screen-label">Supplementary Movie 01</span><span id="screen-type">Numerical systems</span></div>
+          <div class="screen">
+            <video id="player" playsinline preload="none" poster="assets/posters/movie-01.jpg" aria-label="Eight basic PDEs" src="assets/videos/movie-01.mp4"><span data-i18n="fallback">Your browser does not support this video. Use the download link below.</span></video>
+            <button class="play-overlay" id="play" aria-label="Play Eight basic PDEs"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 4.5v15L20 12z"/></svg></button>
+          </div>
+          <div class="film-info" aria-live="polite">
+            <div class="film-heading"><h2 id="film-title">Eight basic PDEs</h2><span id="film-duration">02:00</span></div>
+            <p id="film-description">Follow eight classical systems from observed fields through symbolic search to recovered equations and predictions under held-out conditions.</p>
+            <div class="film-details"><span id="figure">Fig. 2</span><a id="data-source" hidden target="_blank" rel="noopener noreferrer">Data source ↗</a></div>
+          </div>
+          <div class="player-actions">
+            <a id="download" href="assets/videos/movie-01.mp4" download="Supplementary_Movie_01_eight_basic_PDEs.mp4"><span data-i18n="download">Download film</span> <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-4-4 4 4 4-4M5 16v4h14v-4"/></svg></a>
+            <div class="step-actions"><button id="previous" aria-label="Previous film" data-i18n-label="previous" disabled>←</button><span id="position">01 / 10</span><button id="next" aria-label="Next film" data-i18n-label="next">→</button></div>
+          </div>
+          <p id="playback-message" role="status" hidden></p>
+        </div>
+
+        <aside class="collection" aria-label="Choose a film" data-i18n-label="choose">
+          <div class="collection-heading"><h2 data-i18n="collectionHeading">In this collection</h2><span>01—10</span></div>
+          <div class="collection-list" id="film-list"></div>
+          <noscript><p>Enable JavaScript to switch films. All ten MP4 files are available in assets/videos.</p></noscript>
+        </aside>
+      </section>
+
+      <section class="study" id="study" aria-labelledby="study-title">
+        <div><p class="eyebrow" data-i18n="study">The study</p><h2 id="study-title"><span data-i18n="paperFirst">Discovering partial differential equations</span><br> <span data-i18n="paperSecond">through shared symbolic computation</span></h2></div>
+        <p data-i18n="studyDescription">SPADE reuses shared symbolic computations to search for governing equations. These films follow the journey from observed fields through equation discovery to validation, across numerical systems and six physical experiments.</p>
+      </section>
+    </main>
+
+    <footer><span>SPADE <span class="dot">/</span> <span data-i18n="supplements">Supplementary films</span></span><a href="#top" data-i18n="backTop">Back to top ↑</a></footer>
+  </div>
+</body>
+</html>
