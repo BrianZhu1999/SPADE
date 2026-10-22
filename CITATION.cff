@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "If you use SPADE in your research, please cite this software."
+type: software
+license: MIT
+title: "Discovering partial differential equations through shared symbolic computation"
+authors:
+  - family-names: Zhu
+    given-names: Ziyuan
+  - family-names: Hu
+    given-names: Keyu
+  - family-names: Shi
+    given-names: Yuhao
+  - family-names: Bao
+    given-names: Ming
+  - family-names: Gao
+    given-names: Yan
+  - family-names: Chen
+    given-names: Zhifei
+  - family-names: Lu
+    given-names: Minghui
+repository-code: "https://github.com/BrianZhu1999/SPADE"
+url: "https://brianzhu1999.github.io/SPADE/"
+abstract: >-
+  SPADE discovers partial differential equations from observed physical fields
+  through recursive algebraic and differential expression construction, shared
+  intermediate-field computation, weak-form evaluation and compact equation
+  selection.
+keywords:
+  - partial differential equations
+  - symbolic regression
+  - scientific machine learning
+  - equation discovery

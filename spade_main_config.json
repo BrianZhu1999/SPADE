@@ -1,0 +1,35 @@
+{
+  "method": "SPADE",
+  "description": "Shared-subexpression Parallel Algebraic-Differential Enumeration",
+  "configuration": "clean-field main method",
+  "components": {
+    "manifold_projection": false,
+    "dimensional_filter": false,
+    "reinforcement_learning_scheduler": false,
+    "operator_schedule": "round_robin",
+    "selection": "validation_relative_mse + 1e-8 * expression_nodes"
+  },
+  "search": {
+    "variant": "clean_core",
+    "layers": 3,
+    "prefix_cap": 512,
+    "budget": 500000,
+    "chunk": 64,
+    "decision_batch": 64,
+    "compute_batch_cap": 8192,
+    "workspace_gib": 10,
+    "closure_budget": 100000,
+    "max_terms": 8,
+    "kmax": 4,
+    "beam": 64,
+    "weak_rows": 0,
+    "feature_cap": 200000,
+    "budgeted_selection": true,
+    "pareto_rule": "penalized_validation",
+    "complexity_penalty": 1E-08,
+    "fit_method": "qr"
+  },
+  "case_wall_seconds": {
+    "Burgers": 300
+  }
+}

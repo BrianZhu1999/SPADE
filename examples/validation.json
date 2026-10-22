@@ -1,0 +1,61 @@
+{
+  "numpy": "2.2.6",
+  "sympy": "1.13.1",
+  "torch": "2.6.0+cu118",
+  "cuda": "11.8",
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "data_sha256": "6b706a796e8f34b7ccf63bc06ed43e05cdcbd5a0bbf1f29ecd815cf3c2f031a3",
+  "metadata_sha256": "a258ee3d68305e1f21d995f28a6b23c8f1b80359147591cf7761438b1748767a",
+  "source_hashes": {
+    "run_search.py": "f3968f05c0eaf4f95409d9bfc9db982113b80400c4fe2eba73292b6c5adc846a",
+    "run_spade_main.py": "626b5d0bc1eeeebfb3b031efd755aa6090c56aeb962202a824ef826b61674d19",
+    "spade_main_config.json": "240a138bec57ad135626d9c77dfbc1be72bd7c70fbecaab79736b451245c0ca4",
+    "check_semantics.py": "60b600c3d9804bdcf38320ad6039e267d081c6a7b6c643d008c6074e5de2db8d",
+    "core/__init__.py": "3ba51a88982e67b46b3614aabf44161a3eb1005c0542de5ec94eab07830c90e3",
+    "core/conditional_selector.py": "7ad7930e19de10e69a9411270a71413d588c6ad8a715dc1a180ff1ca93a29d64",
+    "core/conservation.py": "d0a1ec254b1892ae925f9fc07a695265c8e047430a0895adf7695e2496f85275",
+    "core/conservative_evaluator.py": "a5eeff0d83e7afadaff50f68b90f5cd8c3c110b85d38fb425c938f683a332ced",
+    "core/evaluation_factory.py": "fbbcea8077ce29fdedb8ad17388efa270667124cd841533ff403b9dafcbc7397",
+    "core/expressions.py": "10b04dc0e30176bfc2c078d84d566a9bcb75a71883d73ce78408c29172115c13",
+    "core/fields.py": "e87dabddc09e56d97161cfe7bb40469723770e2c1b2831d575f97227dfd46c98",
+    "core/pareto.py": "f0759c6416131658a97a9698522e1a1f9ba24a52a1288949ddedd19dbb1d399c",
+    "core/scheduler.py": "ab90a17d29b3a502d20b7e2769c3c08d105972200e12ae5c752a2dbfe86b300e",
+    "core/spatial_contribution.py": "ea122290bd9ed33a1981c91282cb9231d03022300d6e9f693cc74018060248af",
+    "tests/test_static_selection.py": "e7ff57af114ecce32086e19ad1809d111daa37dd8d6a986ac299650cbd9d6682"
+  },
+  "semantics": {
+    "checks": "passed",
+    "one_dimensional": [
+      {
+        "order": 1,
+        "strong_relative_error": 9.405923545674939e-15,
+        "weak_relative_error": 6.460088399909388e-16
+      },
+      {
+        "order": 2,
+        "strong_relative_error": 4.690599872523303e-13,
+        "weak_relative_error": 1.0169719424314274e-15
+      },
+      {
+        "order": 3,
+        "strong_relative_error": 2.5730231845196993e-11,
+        "weak_relative_error": 2.0465358070659868e-14
+      },
+      {
+        "order": 4,
+        "strong_relative_error": 1.4978788369276473e-09,
+        "weak_relative_error": 8.442331834703082e-14
+      }
+    ],
+    "two_dimensional_second_time_error": 2.7393576819522466e-15
+  },
+  "regression_tests": {
+    "passed": true,
+    "log": "test_empty_candidates_report_selection_failure (test_static_selection.StaticSelectionTest.test_empty_candidates_report_selection_failure) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 0.012s\n\nOK\n"
+  },
+  "platform": "Linux",
+  "python": "3.12.2",
+  "command": "python run_spade_main.py --case Burgers --device cuda:0 --batch-id release-final",
+  "result_sha256": "6dbcd65ea0eaded0cc6196a6a4a13e8bb5e84ae2d1ae2d4e376a7400a3f86089",
+  "selected_terms_and_coefficients": "passed"
+}

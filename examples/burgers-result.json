@@ -1,0 +1,347 @@
+{
+  "case": "Burgers",
+  "method": "SPADE",
+  "variant": "clean_core",
+  "seed": 0,
+  "targets": [
+    {
+      "field": "u",
+      "time_order": 1
+    }
+  ],
+  "selected": [
+    {
+      "score": 6.000000000182293e-08,
+      "validation_relative_mse": 1.8229237331349024e-18,
+      "training_relative_mse": 2.3347651146704954e-18,
+      "complexity": 6,
+      "terms": [
+        {
+          "coefficient": 0.0999999999648905,
+          "expression": [
+            "Dxx",
+            [
+              "u"
+            ]
+          ],
+          "text": "Dxx(u)"
+        },
+        {
+          "coefficient": -0.4999999998738316,
+          "expression": [
+            "Dx",
+            [
+              "Mul",
+              [
+                "u"
+              ],
+              [
+                "u"
+              ]
+            ]
+          ],
+          "text": "Dx(Mul(u,u))"
+        }
+      ],
+      "selector": "conditional_diverse_beam",
+      "validation_complexity_penalty": 1e-08,
+      "search_branch": "algebraic_differential",
+      "selected": true
+    }
+  ],
+  "pareto_fronts": [
+    [
+      {
+        "score": 0.16842212444438026,
+        "validation_relative_mse": 0.16842211444438027,
+        "training_relative_mse": 0.804705811561483,
+        "complexity": 1,
+        "terms": [
+          {
+            "coefficient": -0.058137273737273884,
+            "expression": [
+              "u"
+            ],
+            "text": "u"
+          }
+        ],
+        "selector": "conditional_diverse_beam",
+        "validation_complexity_penalty": 1e-08,
+        "search_branch": "algebraic_differential"
+      },
+      {
+        "score": 0.11141825559117614,
+        "validation_relative_mse": 0.11141823559117614,
+        "training_relative_mse": 0.7908201021121435,
+        "complexity": 2,
+        "terms": [
+          {
+            "coefficient": -0.07262592635492864,
+            "expression": [
+              "Tanh",
+              [
+                "u"
+              ]
+            ],
+            "text": "Tanh(u)"
+          }
+        ],
+        "selector": "conditional_diverse_beam",
+        "validation_complexity_penalty": 1e-08,
+        "search_branch": "all_operators"
+      },
+      {
+        "score": 0.08475809313272802,
+        "validation_relative_mse": 0.08475806313272802,
+        "training_relative_mse": 0.784017629299643,
+        "complexity": 3,
+        "terms": [
+          {
+            "coefficient": -0.08387901450950684,
+            "expression": [
+              "Tanh",
+              [
+                "Tanh",
+                [
+                  "u"
+                ]
+              ]
+            ],
+            "text": "Tanh(Tanh(u))"
+          }
+        ],
+        "selector": "conditional_diverse_beam",
+        "validation_complexity_penalty": 1e-08,
+        "search_branch": "all_operators"
+      },
+      {
+        "score": 0.03218734832345173,
+        "validation_relative_mse": 0.03218730832345173,
+        "training_relative_mse": 0.7626727142198041,
+        "complexity": 4,
+        "terms": [
+          {
+            "coefficient": -0.051385649868561825,
+            "expression": [
+              "Sin",
+              [
+                "Add",
+                [
+                  "u"
+                ],
+                [
+                  "u"
+                ]
+              ]
+            ],
+            "text": "Sin(Add(u,u))"
+          }
+        ],
+        "selector": "conditional_diverse_beam",
+        "validation_complexity_penalty": 1e-08,
+        "search_branch": "all_operators"
+      },
+      {
+        "score": 0.0014885444172041602,
+        "validation_relative_mse": 0.0014884944172041603,
+        "training_relative_mse": 0.0006376133173794646,
+        "complexity": 5,
+        "terms": [
+          {
+            "coefficient": 0.1007409672552219,
+            "expression": [
+              "Dxx",
+              [
+                "u"
+              ]
+            ],
+            "text": "Dxx(u)"
+          },
+          {
+            "coefficient": 1.0900713776399187,
+            "expression": [
+              "Dx",
+              [
+                "Cos",
+                [
+                  "u"
+                ]
+              ]
+            ],
+            "text": "Dx(Cos(u))"
+          }
+        ],
+        "selector": "conditional_diverse_beam",
+        "validation_complexity_penalty": 1e-08,
+        "search_branch": "all_operators"
+      },
+      {
+        "score": 6.000000000182293e-08,
+        "validation_relative_mse": 1.8229237331349024e-18,
+        "training_relative_mse": 2.3347651146704954e-18,
+        "complexity": 6,
+        "terms": [
+          {
+            "coefficient": 0.0999999999648905,
+            "expression": [
+              "Dxx",
+              [
+                "u"
+              ]
+            ],
+            "text": "Dxx(u)"
+          },
+          {
+            "coefficient": -0.4999999998738316,
+            "expression": [
+              "Dx",
+              [
+                "Mul",
+                [
+                  "u"
+                ],
+                [
+                  "u"
+                ]
+              ]
+            ],
+            "text": "Dx(Mul(u,u))"
+          }
+        ],
+        "selector": "conditional_diverse_beam",
+        "validation_complexity_penalty": 1e-08,
+        "search_branch": "algebraic_differential",
+        "selected": true
+      },
+      {
+        "score": 9.000000000067056e-08,
+        "validation_relative_mse": 6.705534222740454e-19,
+        "training_relative_mse": 1.681755096347372e-18,
+        "complexity": 9,
+        "terms": [
+          {
+            "coefficient": 1.0999999997534615,
+            "expression": [
+              "Dxx",
+              [
+                "u"
+              ]
+            ],
+            "text": "Dxx(u)"
+          },
+          {
+            "coefficient": -0.9999999997843939,
+            "expression": [
+              "Add",
+              [
+                "Dxx",
+                [
+                  "u"
+                ]
+              ],
+              [
+                "Mul",
+                [
+                  "Dx",
+                  [
+                    "u"
+                  ]
+                ],
+                [
+                  "u"
+                ]
+              ]
+            ],
+            "text": "Add(Dxx(u),Mul(Dx(u),u))"
+          }
+        ],
+        "selector": "conditional_diverse_beam",
+        "validation_complexity_penalty": 1e-08,
+        "search_branch": "algebraic_differential"
+      }
+    ]
+  ],
+  "layers": [
+    {
+      "layer": 1,
+      "input_nodes": 2,
+      "evaluated": 59,
+      "operator_stream_evaluated": 19,
+      "differential_closure_evaluated": 40,
+      "finite_columns": 42,
+      "stream_exhausted": true,
+      "grammar_counts": {
+        "generated": 96,
+        "dimension_rejected": 0,
+        "complexity_rejected": 10,
+        "duplicate": 2
+      }
+    },
+    {
+      "layer": 2,
+      "input_nodes": 40,
+      "evaluated": 7160,
+      "operator_stream_evaluated": 3230,
+      "differential_closure_evaluated": 3930,
+      "finite_columns": 6574,
+      "stream_exhausted": true,
+      "grammar_counts": {
+        "generated": 15128,
+        "dimension_rejected": 0,
+        "complexity_rejected": 7662,
+        "duplicate": 179
+      }
+    },
+    {
+      "layer": 3,
+      "input_nodes": 512,
+      "evaluated": 482921,
+      "operator_stream_evaluated": 482921,
+      "differential_closure_evaluated": 0,
+      "finite_columns": 427855,
+      "stream_exhausted": true,
+      "grammar_counts": {
+        "generated": 543512,
+        "dimension_rejected": 0,
+        "complexity_rejected": 48394,
+        "duplicate": 4471
+      }
+    }
+  ],
+  "generated_evaluated": 490140,
+  "finite_unique_columns": 434469,
+  "selection_columns": 200000,
+  "shared_computation": {
+    "field_nodes_computed": 1124,
+    "field_cache_hits": 1624,
+    "weak_nodes_projected": 763412,
+    "face_nodes_computed": 0,
+    "face_cache_hits": 0
+  },
+  "enumeration_seconds": 90.24520767107606,
+  "wall_seconds": 190.64149066247046,
+  "peak_gpu_bytes": 5605081600,
+  "source_hashes": {
+    "run_search.py": "f3968f05c0eaf4f95409d9bfc9db982113b80400c4fe2eba73292b6c5adc846a",
+    "core/__init__.py": "3ba51a88982e67b46b3614aabf44161a3eb1005c0542de5ec94eab07830c90e3",
+    "core/conditional_selector.py": "7ad7930e19de10e69a9411270a71413d588c6ad8a715dc1a180ff1ca93a29d64",
+    "core/conservation.py": "d0a1ec254b1892ae925f9fc07a695265c8e047430a0895adf7695e2496f85275",
+    "core/conservative_evaluator.py": "a5eeff0d83e7afadaff50f68b90f5cd8c3c110b85d38fb425c938f683a332ced",
+    "core/evaluation_factory.py": "fbbcea8077ce29fdedb8ad17388efa270667124cd841533ff403b9dafcbc7397",
+    "core/expressions.py": "10b04dc0e30176bfc2c078d84d566a9bcb75a71883d73ce78408c29172115c13",
+    "core/fields.py": "e87dabddc09e56d97161cfe7bb40469723770e2c1b2831d575f97227dfd46c98",
+    "core/pareto.py": "f0759c6416131658a97a9698522e1a1f9ba24a52a1288949ddedd19dbb1d399c",
+    "core/scheduler.py": "ab90a17d29b3a502d20b7e2769c3c08d105972200e12ae5c752a2dbfe86b300e",
+    "core/spatial_contribution.py": "ea122290bd9ed33a1981c91282cb9231d03022300d6e9f693cc74018060248af"
+  },
+  "data_hash": "6b706a796e8f34b7ccf63bc06ed43e05cdcbd5a0bbf1f29ecd815cf3c2f031a3",
+  "metadata_hash": "a258ee3d68305e1f21d995f28a6b23c8f1b80359147591cf7761438b1748767a",
+  "selection_rule": "penalized_validation",
+  "completed_families": [
+    "algebraic_differential",
+    "rational_differential",
+    "all_operators"
+  ],
+  "selection_termination": "all_families_completed",
+  "raw_result_sha256": "25e830616c047b4c5f45304dcefc27d44f39d90e2415009bccffefac33a30777"
+}

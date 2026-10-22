@@ -1,0 +1,88 @@
+{
+  "case": "Burgers",
+  "fields": [
+    {
+      "name": "u",
+      "role": "state",
+      "units": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "spatial_axes": [
+    "x"
+  ],
+  "axis_order": [
+    "trajectory",
+    "time",
+    "x"
+  ],
+  "targets": [
+    {
+      "field": "u",
+      "time_order": 1
+    }
+  ],
+  "boundary": {
+    "x": "periodic"
+  },
+  "coordinate_units": {
+    "t": [
+      0,
+      0,
+      0
+    ],
+    "x": [
+      0,
+      0,
+      0
+    ]
+  },
+  "splits": {
+    "train": {
+      "trajectories": [
+        0
+      ],
+      "time_indices": [
+        0,
+        120
+      ]
+    },
+    "validation": {
+      "trajectories": [
+        0
+      ],
+      "time_indices": [
+        120,
+        160
+      ]
+    },
+    "test": {
+      "trajectories": [
+        0
+      ],
+      "time_indices": [
+        160,
+        201
+      ]
+    }
+  },
+  "source": {
+    "name": "SGA-PDE author data",
+    "url": "https://github.com/YuntianChen/SGA-PDE",
+    "files": {
+      "burgers.mat": "8813fcd8af70f4e4c2c5ee228a06c3ca7e37be1189accaa2681a2d3a29190d64"
+    }
+  },
+  "dataset_type": "public_numerical_field",
+  "shape": [
+    1,
+    201,
+    256
+  ],
+  "data_sha256": "6b706a796e8f34b7ccf63bc06ed43e05cdcbd5a0bbf1f29ecd815cf3c2f031a3",
+  "historical_use": "development",
+  "independent_trajectory_count": 1
+}

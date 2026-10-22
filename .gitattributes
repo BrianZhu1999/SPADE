@@ -1,0 +1,10 @@
+*.py text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.txt text eol=lf
+*.cff text eol=lf
+*.yml text eol=lf
+*.npz binary
+*.pdf binary
+*.png binary
+*.mp4 binary
