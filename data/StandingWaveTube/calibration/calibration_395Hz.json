@@ -1,0 +1,717 @@
+{
+  "label": "sheet2_physical_20251224_u_position_pu395",
+  "path": "/media/zzy/raid5/physics_law_discovery_20261013/mrsm_tube/sparse12_calibrated_20261014/sheet2_physical_20251224_u_position_pu395.npy",
+  "data_sha256": "5e8559144e2f301c4f955f80de41c98520b6808d25fb21ae242eed8457132dbb",
+  "raw_path": "/media/zzy/raid5/数据集总库/01_实验测量/驻波管实验结果/驻波管矢量实验/RecordData/20251223pu/pu395.mat",
+  "raw_sha256": "f7b40780fcf09ff7c94c3743c22c9648a1cab52f297bfed619677596e4bf0247",
+  "shape": [
+    1,
+    50000,
+    2,
+    15
+  ],
+  "calibration_dir": "/media/zzy/raid5/驻波管实验结果/驻波管矢量实验/GUI_20251224/GUI_20251224",
+  "script_path": "/media/zzy/raid5/physics_law_discovery_20261013/mrsm_tube/sparse12_calibrated_20261014/scripts/build_corrected_sheet2_pu395.py",
+  "script_sha256": "8f6d8c67d0723a79719cdbc94d00646ee9229d53d073f26fde2a6be0b698c454",
+  "device": {
+    "hostname": "Super-Server",
+    "platform": "Linux-7.0.0-30-generic-x86_64-with-glibc2.39",
+    "python": "3.12.2"
+  },
+  "sampling_frequency_original_hz": 12800,
+  "sampling_frequency_output_hz": 10000,
+  "frequency_used_for_sensor_response_hz": 395,
+  "response_scope": "constant response at 395 Hz applied to this single-tone record",
+  "broken_sensor_ids_one_based": [
+    1,
+    3,
+    10
+  ],
+  "valid_indices_zero_based": [
+    1,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    10,
+    11,
+    12,
+    13,
+    14
+  ],
+  "units_by_channel": [
+    "Pa",
+    "m/s"
+  ],
+  "phase_direction_source": "MATLAB original cross spectrum equals Y*conj(reference); Sheet2 Su=H*415/sin(kL) contains +pi/2",
+  "velocity_axis_source": "MATLAB theory U/P_ref=+j*sin(k*distance_from_rigid_end)/415, with x increasing toward rigid end",
+  "pressure_rule": "1000/sensitivity_mV_per_Pa * exp(-j*stored_phase_rad)",
+  "velocity_rule": "1/sensitivity_V_per_m_s * exp(j*(pi/2-stored_phase_rad))",
+  "phase_rotation_assert_max_abs_error": 1.3136713938877165e-12,
+  "calibration_records": [
+    {
+      "workbook_path": "/media/zzy/raid5/驻波管实验结果/驻波管矢量实验/GUI_20251224/GUI_20251224/Tube2.xls",
+      "workbook_sha256": "1ecf82476299a07d2f181bfa9a6c5110bea600c4f2d1dfc713122ca7accd09e2",
+      "sheet": 1,
+      "calibration_position": "U",
+      "columns_zero_based": [
+        3,
+        4,
+        5
+      ],
+      "sensitivity": 9.421829705444306,
+      "stored_phase_rad": 0.07402966420264914,
+      "stored_phase_degree": 4.241587317582509,
+      "interpolation_bracket_hz": [
+        395.0,
+        395.0
+      ],
+      "sensor_id_one_based": 2,
+      "channel": "P",
+      "raw_track": 3,
+      "raw_unit": "V",
+      "physical_unit": "Pa",
+      "correction_phase_degree": -4.241587317582509,
+      "correction_amplitude": 106.13649697172518,
+      "factor_real": 105.84579501044112,
+      "factor_imag": -7.850074396889744
+    },
+    {
+      "workbook_path": "/media/zzy/raid5/驻波管实验结果/驻波管矢量实验/GUI_20251224/GUI_20251224/Tube2.xls",
+      "workbook_sha256": "1ecf82476299a07d2f181bfa9a6c5110bea600c4f2d1dfc713122ca7accd09e2",
+      "sheet": 2,
+      "calibration_position": "U",
+      "columns_zero_based": [
+        3,
+        4,
+        5
+      ],
+      "sensitivity": 21.09578715983492,
+      "stored_phase_rad": 1.1848277861103789,
+      "stored_phase_degree": 67.88563159395373,
+      "interpolation_bracket_hz": [
+        395.0,
+        395.0
+      ],
+      "sensor_id_one_based": 2,
+      "channel": "U",
+      "raw_track": 4,
+      "raw_unit": "V",
+      "physical_unit": "m/s",
+      "correction_phase_degree": 22.114368406046268,
+      "correction_amplitude": 0.04740282940965286,
+      "factor_real": 0.04391560488860007,
+      "factor_imag": 0.017845108105837174
+    },
+    {
+      "workbook_path": "/media/zzy/raid5/驻波管实验结果/驻波管矢量实验/GUI_20251224/GUI_20251224/Tube4.xls",
+      "workbook_sha256": "1ee0ac95ebc2e3b2e971dda81ef9b2fcaef1934253779bd17bd4bec8efd8849a",
+      "sheet": 1,
+      "calibration_position": "U",
+      "columns_zero_based": [
+        3,
+        4,
+        5
+      ],
+      "sensitivity": 9.514618211879304,
+      "stored_phase_rad": 0.07810221248587466,
+      "stored_phase_degree": 4.47492714607458,
+      "interpolation_bracket_hz": [
+        395.0,
+        395.0
+      ],
+      "sensor_id_one_based": 4,
+      "channel": "P",
+      "raw_track": 7,
+      "raw_unit": "V",
+      "physical_unit": "Pa",
+      "correction_phase_degree": -4.47492714607458,
+      "correction_amplitude": 105.10143210491286,
+      "factor_real": 104.7810379860081,
+      "factor_imag": -8.20031152324926
+    },
+    {
+      "workbook_path": "/media/zzy/raid5/驻波管实验结果/驻波管矢量实验/GUI_20251224/GUI_20251224/Tube4.xls",
+      "workbook_sha256": "1ee0ac95ebc2e3b2e971dda81ef9b2fcaef1934253779bd17bd4bec8efd8849a",
+      "sheet": 2,
+      "calibration_position": "U",
+      "columns_zero_based": [
+        3,
+        4,
+        5
+      ],
+      "sensitivity": 46.46937484195959,
+      "stored_phase_rad": 1.330551599538702,
+      "stored_phase_degree": 76.23499107794848,
+      "interpolation_bracket_hz": [
+        395.0,
+        395.0
+      ],
+      "sensor_id_one_based": 4,
+      "channel": "U",
+      "raw_track": 8,
+      "raw_unit": "V",
+      "physical_unit": "m/s",
+      "correction_phase_degree": 13.765008922051518,
+      "correction_amplitude": 0.021519549238632075,
+      "factor_real": 0.020901502909323112,
+      "factor_imag": 0.00512036869429027
+    },
+    {
+      "workbook_path": "/media/zzy/raid5/驻波管实验结果/驻波管矢量实验/GUI_20251224/GUI_20251224/Tube5.xls",
+      "workbook_sha256": "71f39c260f91dc0e9204f7c08d49dc4837d53355c5ed790857accb985c143894",
+      "sheet": 1,
+      "calibration_position": "U",
+      "columns_zero_based": [
+        3,
+        4,
+        5
+      ],
+      "sensitivity": 9.348426528543373,
+      "stored_phase_rad": 0.06555068449965457,
+      "stored_phase_degree": 3.755777566023831,
+      "interpolation_bracket_hz": [
+        395.0,
+        395.0
+      ],
+      "sensor_id_one_based": 5,
+      "channel": "P",
+      "raw_track": 9,
+      "raw_unit": "V",
+      "physical_unit": "Pa",
+      "correction_phase_degree": -3.755777566023831,
+      "correction_amplitude": 106.9698731595867,
+      "factor_real": 106.74013643123425,
+      "factor_imag": -7.006927887424399
+    },
+    {
+      "workbook_path": "/media/zzy/raid5/驻波管实验结果/驻波管矢量实验/GUI_20251224/GUI_20251224/Tube5.xls",
+      "workbook_sha256": "71f39c260f91dc0e9204f7c08d49dc4837d53355c5ed790857accb985c143894",
+      "sheet": 2,
+      "calibration_position": "U",
+      "columns_zero_based": [
+        3,
+        4,
+        5
+      ],
+      "sensitivity": 48.92867497164502,
+      "stored_phase_rad": 1.3087429987799561,
+      "stored_phase_degree": 74.98545029738654,
+      "interpolation_bracket_hz": [
+        395.0,
+        395.0
+      ],
+      "sensor_id_one_based": 5,
+      "channel": "U",
+      "raw_track": 10,
+      "raw_unit": "V",
+      "physical_unit": "m/s",
+      "correction_phase_degree": 15.014549702613463,
+      "correction_amplitude": 0.020437912953488246,
+      "factor_real": 0.019740164047793513,
+      "factor_imag": 0.005294734106691577
+    },
+    {
+      "workbook_path": "/media/zzy/raid5/驻波管实验结果/驻波管矢量实验/GUI_20251224/GUI_20251224/Tube6.xls",
+      "workbook_sha256": "71ff6ee34397bb9f161eb50759cd6c50872e198f76f9f31663cd3ca3f60878bb",
+      "sheet": 1,
+      "calibration_position": "U",
+      "columns_zero_based": [
+        3,
+        4,
+        5
+      ],
+      "sensitivity": 9.981040780161822,
+      "stored_phase_rad": 0.12877118486184835,
+      "stored_phase_degree": 7.378045415482828,
+      "interpolation_bracket_hz": [
+        395.0,
+        395.0
+      ],
+      "sensor_id_one_based": 6,
+      "channel": "P",
+      "raw_track": 11,
+      "raw_unit": "V",
+      "physical_unit": "Pa",
+      "correction_phase_degree": -7.378045415482828,
+      "correction_amplitude": 100.18995233318616,
+      "factor_real": 99.3604237566274,
+      "factor_imag": -12.865952721409657
+    },
+    {
+      "workbook_path": "/media/zzy/raid5/驻波管实验结果/驻波管矢量实验/GUI_20251224/GUI_20251224/Tube6.xls",
+      "workbook_sha256": "71ff6ee34397bb9f161eb50759cd6c50872e198f76f9f31663cd3ca3f60878bb",
+      "sheet": 2,
+      "calibration_position": "U",
+      "columns_zero_based": [
+        3,
+        4,
+        5
+      ],
+      "sensitivity": 46.51106510142634,
+      "stored_phase_rad": -4.935476921301351,
+      "stored_phase_degree": -282.78199747478857,
+      "interpolation_bracket_hz": [
+        395.0,
+        395.0
+      ],
+      "sensor_id_one_based": 6,
+      "channel": "U",
+      "raw_track": 12,
+      "raw_unit": "V",
+      "physical_unit": "m/s",
+      "correction_phase_degree": 372.7819974747886,
+      "correction_amplitude": 0.021500260160013693,
+      "factor_real": 0.020967460438073984,
+      "factor_imag": 0.0047567625257179304
+    },
+    {
+      "workbook_path": "/media/zzy/raid5/驻波管实验结果/驻波管矢量实验/GUI_20251224/GUI_20251224/Tube7.xls",
+      "workbook_sha256": "25710f24ba19afd52a3e4e3b5676b066fdbed371e07ea3b1535a5d8f73a55db7",
+      "sheet": 1,
+      "calibration_position": "U",
+      "columns_zero_based": [
+        3,
+        4,
+        5
+      ],
+      "sensitivity": 9.453809187670819,
+      "stored_phase_rad": 0.05855008489755502,
+      "stored_phase_degree": 3.3546727547625634,
+      "interpolation_bracket_hz": [
+        395.0,
+        395.0
+      ],
+      "sensor_id_one_based": 7,
+      "channel": "P",
+      "raw_track": 13,
+      "raw_unit": "V",
+      "physical_unit": "Pa",
+      "correction_phase_degree": -3.3546727547625634,
+      "correction_amplitude": 105.77746812408162,
+      "factor_real": 105.59621138641096,
+      "factor_imag": -6.189741802168976
+    },
+    {
+      "workbook_path": "/media/zzy/raid5/驻波管实验结果/驻波管矢量实验/GUI_20251224/GUI_20251224/Tube7.xls",
+      "workbook_sha256": "25710f24ba19afd52a3e4e3b5676b066fdbed371e07ea3b1535a5d8f73a55db7",
+      "sheet": 2,
+      "calibration_position": "U",
+      "columns_zero_based": [
+        3,
+        4,
+        5
+      ],
+      "sensitivity": 44.70411260775037,
+      "stored_phase_rad": -5.018388077151372,
+      "stored_phase_degree": -287.5324567795462,
+      "interpolation_bracket_hz": [
+        395.0,
+        395.0
+      ],
+      "sensor_id_one_based": 7,
+      "channel": "U",
+      "raw_track": 14,
+      "raw_unit": "V",
+      "physical_unit": "m/s",
+      "correction_phase_degree": 377.5324567795462,
+      "correction_amplitude": 0.02236930657307421,
+      "factor_real": 0.021330172974949872,
+      "factor_imag": 0.0067386643646125685
+    },
+    {
+      "workbook_path": "/media/zzy/raid5/驻波管实验结果/驻波管矢量实验/GUI_20251224/GUI_20251224/Tube8.xls",
+      "workbook_sha256": "6e647da66ee45430580f38d172cf574f2b391fb5ce99a7c8617bd1ff1c010bce",
+      "sheet": 1,
+      "calibration_position": "U",
+      "columns_zero_based": [
+        3,
+        4,
+        5
+      ],
+      "sensitivity": 9.603982570568279,
+      "stored_phase_rad": 0.1277418463686306,
+      "stored_phase_degree": 7.319068664131095,
+      "interpolation_bracket_hz": [
+        395.0,
+        395.0
+      ],
+      "sensor_id_one_based": 8,
+      "channel": "P",
+      "raw_track": 15,
+      "raw_unit": "V",
+      "physical_unit": "Pa",
+      "correction_phase_degree": -7.319068664131095,
+      "correction_amplitude": 104.12347093012569,
+      "factor_real": 103.27508321409003,
+      "factor_imag": -13.264779894876098
+    },
+    {
+      "workbook_path": "/media/zzy/raid5/驻波管实验结果/驻波管矢量实验/GUI_20251224/GUI_20251224/Tube8.xls",
+      "workbook_sha256": "6e647da66ee45430580f38d172cf574f2b391fb5ce99a7c8617bd1ff1c010bce",
+      "sheet": 2,
+      "calibration_position": "U",
+      "columns_zero_based": [
+        3,
+        4,
+        5
+      ],
+      "sensitivity": 48.59218426841975,
+      "stored_phase_rad": 1.2669739765755492,
+      "stored_phase_degree": 72.5922616106858,
+      "interpolation_bracket_hz": [
+        395.0,
+        395.0
+      ],
+      "sensor_id_one_based": 8,
+      "channel": "U",
+      "raw_track": 16,
+      "raw_unit": "V",
+      "physical_unit": "m/s",
+      "correction_phase_degree": 17.407738389314204,
+      "correction_amplitude": 0.02057944122198894,
+      "factor_real": 0.019636901399233842,
+      "factor_imag": 0.006156744630571071
+    },
+    {
+      "workbook_path": "/media/zzy/raid5/驻波管实验结果/驻波管矢量实验/GUI_20251224/GUI_20251224/Tube9.xls",
+      "workbook_sha256": "795da9c128dfc5c72c46072fa9b52e040c9b65fca0c54a732d375f26c9f012c3",
+      "sheet": 1,
+      "calibration_position": "U",
+      "columns_zero_based": [
+        3,
+        4,
+        5
+      ],
+      "sensitivity": 9.842126856538068,
+      "stored_phase_rad": 0.10900464041477251,
+      "stored_phase_degree": 6.245505843107628,
+      "interpolation_bracket_hz": [
+        395.0,
+        395.0
+      ],
+      "sensor_id_one_based": 9,
+      "channel": "P",
+      "raw_track": 17,
+      "raw_unit": "V",
+      "physical_unit": "Pa",
+      "correction_phase_degree": -6.245505843107628,
+      "correction_amplitude": 101.60405515762133,
+      "factor_real": 101.00102233349588,
+      "factor_imag": -11.053393689796152
+    },
+    {
+      "workbook_path": "/media/zzy/raid5/驻波管实验结果/驻波管矢量实验/GUI_20251224/GUI_20251224/Tube9.xls",
+      "workbook_sha256": "795da9c128dfc5c72c46072fa9b52e040c9b65fca0c54a732d375f26c9f012c3",
+      "sheet": 2,
+      "calibration_position": "U",
+      "columns_zero_based": [
+        3,
+        4,
+        5
+      ],
+      "sensitivity": 47.80762787427856,
+      "stored_phase_rad": 1.3023780715154807,
+      "stored_phase_degree": 74.62076682822433,
+      "interpolation_bracket_hz": [
+        395.0,
+        395.0
+      ],
+      "sensor_id_one_based": 9,
+      "channel": "U",
+      "raw_track": 18,
+      "raw_unit": "V",
+      "physical_unit": "m/s",
+      "correction_phase_degree": 15.379233171775658,
+      "correction_amplitude": 0.020917164152752694,
+      "factor_real": 0.02016815379609492,
+      "factor_imag": 0.005547371327959255
+    },
+    {
+      "workbook_path": "/media/zzy/raid5/驻波管实验结果/驻波管矢量实验/GUI_20251224/GUI_20251224/Tube11.xls",
+      "workbook_sha256": "34932adc9d236229a9a64167505f8a962613a857031bb4317308cf79ec0c38b1",
+      "sheet": 1,
+      "calibration_position": "U",
+      "columns_zero_based": [
+        3,
+        4,
+        5
+      ],
+      "sensitivity": 9.96018502938377,
+      "stored_phase_rad": 0.1170252890341343,
+      "stored_phase_degree": 6.705055157954489,
+      "interpolation_bracket_hz": [
+        395.0,
+        395.0
+      ],
+      "sensor_id_one_based": 11,
+      "channel": "P",
+      "raw_track": 21,
+      "raw_unit": "V",
+      "physical_unit": "Pa",
+      "correction_phase_degree": -6.705055157954489,
+      "correction_amplitude": 100.39974127487362,
+      "factor_real": 99.71304237651407,
+      "factor_imag": -11.722509461760755
+    },
+    {
+      "workbook_path": "/media/zzy/raid5/驻波管实验结果/驻波管矢量实验/GUI_20251224/GUI_20251224/Tube11.xls",
+      "workbook_sha256": "34932adc9d236229a9a64167505f8a962613a857031bb4317308cf79ec0c38b1",
+      "sheet": 2,
+      "calibration_position": "U",
+      "columns_zero_based": [
+        3,
+        4,
+        5
+      ],
+      "sensitivity": 46.31706557989364,
+      "stored_phase_rad": 1.3684706772439483,
+      "stored_phase_degree": 78.40759419348771,
+      "interpolation_bracket_hz": [
+        395.0,
+        395.0
+      ],
+      "sensor_id_one_based": 11,
+      "channel": "U",
+      "raw_track": 22,
+      "raw_unit": "V",
+      "physical_unit": "m/s",
+      "correction_phase_degree": 11.592405806512293,
+      "correction_amplitude": 0.021590314228242098,
+      "factor_real": 0.021149912679868134,
+      "factor_imag": 0.004338532252753962
+    },
+    {
+      "workbook_path": "/media/zzy/raid5/驻波管实验结果/驻波管矢量实验/GUI_20251224/GUI_20251224/Tube12.xls",
+      "workbook_sha256": "14293a6c4a27630da8b40441aadadc8e99a025872a3033dad0a37dc0bbe38d70",
+      "sheet": 1,
+      "calibration_position": "U",
+      "columns_zero_based": [
+        3,
+        4,
+        5
+      ],
+      "sensitivity": 9.937058560689508,
+      "stored_phase_rad": -0.06970702050824278,
+      "stored_phase_degree": -3.9939180775541856,
+      "interpolation_bracket_hz": [
+        395.0,
+        395.0
+      ],
+      "sensor_id_one_based": 12,
+      "channel": "P",
+      "raw_track": 23,
+      "raw_unit": "V",
+      "physical_unit": "Pa",
+      "correction_phase_degree": 3.9939180775541856,
+      "correction_amplitude": 100.63340111086278,
+      "factor_real": 100.38900779007272,
+      "factor_imag": 7.009174991717413
+    },
+    {
+      "workbook_path": "/media/zzy/raid5/驻波管实验结果/驻波管矢量实验/GUI_20251224/GUI_20251224/Tube12.xls",
+      "workbook_sha256": "14293a6c4a27630da8b40441aadadc8e99a025872a3033dad0a37dc0bbe38d70",
+      "sheet": 2,
+      "calibration_position": "U",
+      "columns_zero_based": [
+        3,
+        4,
+        5
+      ],
+      "sensitivity": 46.24479438685481,
+      "stored_phase_rad": -5.101688205148773,
+      "stored_phase_degree": -292.3052025466968,
+      "interpolation_bracket_hz": [
+        395.0,
+        395.0
+      ],
+      "sensor_id_one_based": 12,
+      "channel": "U",
+      "raw_track": 24,
+      "raw_unit": "V",
+      "physical_unit": "m/s",
+      "correction_phase_degree": 382.30520254669676,
+      "correction_amplitude": 0.021624055491189564,
+      "factor_real": 0.02000604114740937,
+      "factor_imag": 0.008207197663892869
+    },
+    {
+      "workbook_path": "/media/zzy/raid5/驻波管实验结果/驻波管矢量实验/GUI_20251224/GUI_20251224/Tube13.xls",
+      "workbook_sha256": "c14a6b6324337c09ed62bb5692f314176a0de7f132cd7ca10ca3cd9db98321fd",
+      "sheet": 1,
+      "calibration_position": "U",
+      "columns_zero_based": [
+        3,
+        4,
+        5
+      ],
+      "sensitivity": 9.532257685656417,
+      "stored_phase_rad": 0.035923597173339816,
+      "stored_phase_degree": 2.0582705029604655,
+      "interpolation_bracket_hz": [
+        395.0,
+        395.0
+      ],
+      "sensor_id_one_based": 13,
+      "channel": "P",
+      "raw_track": 25,
+      "raw_unit": "V",
+      "physical_unit": "Pa",
+      "correction_phase_degree": -2.0582705029604655,
+      "correction_amplitude": 104.90694156377471,
+      "factor_real": 104.83925738554359,
+      "factor_imag": -3.767824188173388
+    },
+    {
+      "workbook_path": "/media/zzy/raid5/驻波管实验结果/驻波管矢量实验/GUI_20251224/GUI_20251224/Tube13.xls",
+      "workbook_sha256": "c14a6b6324337c09ed62bb5692f314176a0de7f132cd7ca10ca3cd9db98321fd",
+      "sheet": 2,
+      "calibration_position": "U",
+      "columns_zero_based": [
+        3,
+        4,
+        5
+      ],
+      "sensitivity": 47.79516371822503,
+      "stored_phase_rad": 1.237816510543687,
+      "stored_phase_degree": 70.92166186576402,
+      "interpolation_bracket_hz": [
+        395.0,
+        395.0
+      ],
+      "sensor_id_one_based": 13,
+      "channel": "U",
+      "raw_track": 26,
+      "raw_unit": "V",
+      "physical_unit": "m/s",
+      "correction_phase_degree": 19.078338134235974,
+      "correction_amplitude": 0.020922618989140208,
+      "factor_real": 0.019773393010029103,
+      "factor_imag": 0.006838780171614128
+    },
+    {
+      "workbook_path": "/media/zzy/raid5/驻波管实验结果/驻波管矢量实验/GUI_20251224/GUI_20251224/Tube14.xls",
+      "workbook_sha256": "9cae7fabed664ccab779c70dd42cfc15c0c32c467f86a29178e11ad280855aaa",
+      "sheet": 1,
+      "calibration_position": "U",
+      "columns_zero_based": [
+        3,
+        4,
+        5
+      ],
+      "sensitivity": 9.760669185211304,
+      "stored_phase_rad": -0.09960049657946521,
+      "stored_phase_degree": -5.706688091410549,
+      "interpolation_bracket_hz": [
+        395.0,
+        395.0
+      ],
+      "sensor_id_one_based": 14,
+      "channel": "P",
+      "raw_track": 27,
+      "raw_unit": "V",
+      "physical_unit": "Pa",
+      "correction_phase_degree": 5.706688091410549,
+      "correction_amplitude": 102.45199186907506,
+      "factor_real": 101.94423668955054,
+      "factor_imag": 10.18740613335509
+    },
+    {
+      "workbook_path": "/media/zzy/raid5/驻波管实验结果/驻波管矢量实验/GUI_20251224/GUI_20251224/Tube14.xls",
+      "workbook_sha256": "9cae7fabed664ccab779c70dd42cfc15c0c32c467f86a29178e11ad280855aaa",
+      "sheet": 2,
+      "calibration_position": "U",
+      "columns_zero_based": [
+        3,
+        4,
+        5
+      ],
+      "sensitivity": 49.14849847127547,
+      "stored_phase_rad": 1.1939054486155083,
+      "stored_phase_degree": 68.4057433433418,
+      "interpolation_bracket_hz": [
+        395.0,
+        395.0
+      ],
+      "sensor_id_one_based": 14,
+      "channel": "U",
+      "raw_track": 28,
+      "raw_unit": "V",
+      "physical_unit": "m/s",
+      "correction_phase_degree": 21.5942566566582,
+      "correction_amplitude": 0.02034650154336747,
+      "factor_real": 0.018918449414239355,
+      "factor_imag": 0.007488150426849173
+    },
+    {
+      "workbook_path": "/media/zzy/raid5/驻波管实验结果/驻波管矢量实验/GUI_20251224/GUI_20251224/Tube15.xls",
+      "workbook_sha256": "8624f1b1c3c96c0f9c060cf3a40f6f7db7798153901997ab947a34204b3e7fad",
+      "sheet": 1,
+      "calibration_position": "U",
+      "columns_zero_based": [
+        3,
+        4,
+        5
+      ],
+      "sensitivity": 9.693983588756495,
+      "stored_phase_rad": 0.028963284270475922,
+      "stored_phase_degree": 1.6594739495359139,
+      "interpolation_bracket_hz": [
+        395.0,
+        395.0
+      ],
+      "sensor_id_one_based": 15,
+      "channel": "P",
+      "raw_track": 29,
+      "raw_unit": "V",
+      "physical_unit": "Pa",
+      "correction_phase_degree": -1.6594739495359139,
+      "correction_amplitude": 103.15676634318255,
+      "factor_real": 103.11350171479067,
+      "factor_imag": -2.9873410410968932
+    },
+    {
+      "workbook_path": "/media/zzy/raid5/驻波管实验结果/驻波管矢量实验/GUI_20251224/GUI_20251224/Tube15.xls",
+      "workbook_sha256": "8624f1b1c3c96c0f9c060cf3a40f6f7db7798153901997ab947a34204b3e7fad",
+      "sheet": 2,
+      "calibration_position": "U",
+      "columns_zero_based": [
+        3,
+        4,
+        5
+      ],
+      "sensitivity": 51.765183205682504,
+      "stored_phase_rad": 1.1110493670165102,
+      "stored_phase_degree": 63.65843956072766,
+      "interpolation_bracket_hz": [
+        395.0,
+        395.0
+      ],
+      "sensor_id_one_based": 15,
+      "channel": "U",
+      "raw_track": 30,
+      "raw_unit": "V",
+      "physical_unit": "m/s",
+      "correction_phase_degree": 26.341560439272346,
+      "correction_amplitude": 0.01931800368650536,
+      "factor_real": 0.017312115017618458,
+      "factor_imag": 0.008571810780026827
+    }
+  ],
+  "search_protocol": {
+    "slice": [
+      100,
+      6100
+    ],
+    "nonoverlap_block_frames": 200,
+    "train_valid_test_blocks": [
+      18,
+      6,
+      6
+    ],
+    "x_rule_m": "zero_based_sensor_index*0.08",
+    "time_rule_s": "(100+arange(6000))*1e-4"
+  }
+}

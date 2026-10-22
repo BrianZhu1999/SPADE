@@ -1,0 +1,105 @@
+{
+  "title": "SPADE standing-wave tube measurements",
+  "observation_type": "experimentally measured pressure and axial particle velocity after probe calibration",
+  "sampling_frequency_hz": 10000,
+  "record_duration_s": 5,
+  "axis_order": [
+    "record",
+    "time",
+    "probe"
+  ],
+  "field_units": {
+    "field_p": "Pa",
+    "field_v": "m/s",
+    "t": "s",
+    "x": "m"
+  },
+  "valid_sensor_indices_zero_based": [
+    1,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    10,
+    11,
+    12,
+    13,
+    14
+  ],
+  "x_rule": "zero_based_sensor_index * 0.08 m; relative coordinates increasing toward the rigid end",
+  "records": [
+    {
+      "frequency_hz": 385,
+      "file": "record_385Hz.npz",
+      "sha256": "adddd6388969b164cb1cf6286bde1cd5b0e8402b3ff659960fc2d72a68e17233",
+      "shape_per_field": [
+        1,
+        50000,
+        12
+      ],
+      "dtype": "float64",
+      "parent_array_sha256": "cc2809524aeac61a4c48e09f60b56ead616647b46aa72a6c311b6d03d2fb90d6",
+      "parent_array_original_filename": "sheet2_physical_20251224_u_position.npy",
+      "calibration_manifest": "calibration/calibration_385Hz.json"
+    },
+    {
+      "frequency_hz": 395,
+      "file": "record_395Hz.npz",
+      "sha256": "d8892d1b06e1842e60a19fef47a9757a86f7ca579f9dbd3a10aa95163d774801",
+      "shape_per_field": [
+        1,
+        50000,
+        12
+      ],
+      "dtype": "float64",
+      "parent_array_sha256": "5e8559144e2f301c4f955f80de41c98520b6808d25fb21ae242eed8457132dbb",
+      "parent_array_original_filename": "sheet2_physical_20251224_u_position_pu395.npy",
+      "calibration_manifest": "calibration/calibration_395Hz.json"
+    }
+  ],
+  "index_convention": "zero-based half-open intervals [start, stop)",
+  "protocol": {
+    "385Hz": {
+      "discovery_record_samples": [
+        100,
+        6100
+      ],
+      "block_frames": 200,
+      "train_blocks": [
+        0,
+        18
+      ],
+      "validation_blocks": [
+        18,
+        24
+      ],
+      "test_blocks": [
+        24,
+        30
+      ],
+      "later_weak_test_samples": [
+        10000,
+        11200
+      ],
+      "forward_samples": [
+        10000,
+        10202
+      ]
+    },
+    "395Hz": {
+      "role": "independent frequency-transfer test; frozen 385 Hz equations",
+      "weak_test_samples": [
+        100,
+        1300
+      ],
+      "forward_samples": [
+        100,
+        302
+      ]
+    }
+  },
+  "forward_protocol": "first sample supplies the initial field; subsequent measured incoming boundary characteristics at the two endpoint probes are supplied; ten interior probes are scored",
+  "packaging": "Selected the 12 valid measured probes and losslessly compressed the calibrated float64 fields; no interpolation, denoising or additional amplitude scaling. observations.npz and metadata.json are unchanged copies of the original 385 Hz search input."
+}

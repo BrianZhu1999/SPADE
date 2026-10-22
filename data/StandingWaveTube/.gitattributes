@@ -1,0 +1,4 @@
+metadata.json -text
+calibration/calibration_*.json -text
+*.xls binary
+SHA256SUMS text eol=lf

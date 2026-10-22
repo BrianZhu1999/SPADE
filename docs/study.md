@@ -38,12 +38,14 @@ SPADE identifies how algebraic operations and spatial derivatives combine to gov
 
 ## Data sources
 
-The standing-wave tube measurements were collected for this study. The five external experimental systems use data associated with the following publications.
+The standing-wave tube measurements were collected for this study and are publicly available in [`data/StandingWaveTube/`](../data/StandingWaveTube/). The package contains the complete calibrated 385 Hz and 395 Hz records at 12 measured probe positions, the original discovery input, calibration tables and response factors, spatial and temporal coordinates, data partitions and SHA-256 checksums.
 
-| System | Source publication |
-| --- | --- |
-| MeshRIR | Koyama et al. (2021), *MeshRIR: A Dataset of Room Impulse Responses on Meshed Grid Points for Evaluating Sound Field Analysis and Synthesis Methods*. [DOI](https://doi.org/10.1109/WASPAA52581.2021.9632672) |
-| Cylinder wake | Renn et al. (2026), *Experimental dataset of sub-critical cylinder wake velocity fields*. [DOI](https://doi.org/10.1038/s41597-026-07368-z) |
-| Gel electrophoresis | Both et al. (2021), *DeepMoD: Deep learning for model discovery in noisy data*. [DOI](https://doi.org/10.1016/j.jcp.2020.109985) |
-| Near-breaking surface waves | Xu et al. (2025), *Generative discovery of partial differential equations by learning from math handbooks*. [DOI](https://doi.org/10.1038/s41467-025-65114-2) |
-| Active nematics | Golden et al. (2023), *Physically informed data-driven modeling of active nematics*. [DOI](https://doi.org/10.1126/sciadv.abq6120) |
+The five external experimental systems use the following published data sources. Fixed versions identify the files used in this study.
+
+| System | Source publication | Data |
+| --- | --- | --- |
+| MeshRIR | Koyama et al. (2021), *MeshRIR: A Dataset of Room Impulse Responses on Meshed Grid Points for Evaluating Sound Field Analysis and Synthesis Methods*. [DOI](https://doi.org/10.1109/WASPAA52581.2021.9632672) | [Zenodo 10852693](https://doi.org/10.5281/zenodo.10852693), `S1-M3969_npy.zip` |
+| Cylinder wake | Renn et al. (2026), *Experimental dataset of sub-critical cylinder wake velocity fields*. [DOI](https://doi.org/10.1038/s41597-026-07368-z) | [CaltechDATA](https://doi.org/10.22002/g2z1f-nex65), `Re_240.h5` |
+| Gel electrophoresis | Both et al. (2021), *DeepMoD: Deep learning for model discovery in noisy data*. [DOI](https://doi.org/10.1016/j.jcp.2020.109985) | [DeePyMoD array](https://github.com/PhIMaL/DeePyMoD/blob/5fad44f8194a90c899d880d4fa7d6d2f2f2763a4/paper/Advection_diffusion/diffusion_advection_29longb.npy), commit `5fad44f8194a90c899d880d4fa7d6d2f2f2763a4` |
+| Near-breaking surface waves | Xu et al. (2025), *Generative discovery of partial differential equations by learning from math handbooks*. [DOI](https://doi.org/10.1038/s41467-025-65114-2) | [KD-data array](https://huggingface.co/datasets/timeoutHao/KD-data/blob/24f6727e66a71c902f8466cf3ab0cae35165268b/bench/wave_breaking/WaveBreaking.pkl), revision `24f6727e66a71c902f8466cf3ab0cae35165268b` |
+| Active nematics | Golden et al. (2023), *Physically informed data-driven modeling of active nematics*. [DOI](https://doi.org/10.1126/sciadv.abq6120) | [Zenodo 7249653](https://doi.org/10.5281/zenodo.7249653), `observables.mat` |

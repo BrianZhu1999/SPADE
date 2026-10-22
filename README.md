@@ -51,6 +51,7 @@ Results are written to `results/example/SPADE/Burgers/clean_core/seed0/`. Open `
 | [`run_spade_main.py`](run_spade_main.py) | Entry point using the bundled configuration |
 | [`spade_main_config.json`](spade_main_config.json) | Search operators, budgets and selection settings |
 | [`data/Burgers/`](data/Burgers/) | Observed field, coordinates, data split and source license |
+| [`data/StandingWaveTube/`](data/StandingWaveTube/) | Measured 385 Hz and 395 Hz pressure and particle velocity, calibration records, coordinates and data partitions |
 | [`examples/`](examples/) | Evaluated Burgers output and verification record |
 | [`docs/reproduce.md`](docs/reproduce.md) | Environment, commands, data format and output interpretation |
 | [`docs/study.md`](docs/study.md) | Paper figures, supplementary movies and experimental data references |
