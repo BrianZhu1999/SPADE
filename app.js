@@ -3,7 +3,7 @@ const films = [
   {title:'Eight basic PDEs',duration:120,figure:'Fig. 2',description:'Follow eight classical systems from observed fields through symbolic search to recovered equations and predictions under held-out conditions.',file:'eight_basic_PDEs'},
   {title:'Five open-form PDEs',duration:112,figure:'Fig. 3',description:'Explore how recursive algebraic and differential operations reveal nested nonlinear structures, from gravity flow to graph-curvature dynamics.',file:'five_open_form_PDEs'},
   {title:'Three-dimensional Euler equations',duration:62,figure:'Fig. 4a–e',description:'Trace shared symbolic computation through the recovery of five coupled conservation laws and the prediction of three-dimensional compressible flow.',file:'three_dimensional_Euler'},
-  {title:'Navier–Stokes and Gray–Scott',duration:120,figure:'Fig. 4',description:'Examine coupled flow and reaction–diffusion dynamics as observations become noisy or spatially sparse, linking equation selection to predictive tests.',file:'Navier_Stokes_Gray_Scott'},
+  {title:'Navier–Stokes, Darcy and Gray–Scott',duration:148,figure:'Fig. 4',description:'Follow Navier–Stokes predictions from clean observations, then compare Darcy and Gray–Scott equation recovery and predictions under noisy and spatially sparse observations.',file:'Navier_Stokes_Darcy_Gray_Scott'},
   {title:'Standing-wave tube',duration:77,figure:'Fig. 5a–c',description:'See sparse pressure and particle-velocity measurements reveal coupled acoustic equations, an inferred sound speed and a consistent energy balance.',file:'standing_wave_tube'},
   {title:'MeshRIR acoustic field',duration:80,figure:'Fig. 5d',description:'Recover directional wave propagation from measured room acoustics and compare the inferred sound speed with the sound speed calculated from the dataset’s recorded temperature.',file:'MeshRIR_3D_acoustic_field',source:'Koyama et al. · 2021',doi:'10.1109/WASPAA52581.2021.9632672'},
   {title:'Cylinder wake',duration:72,figure:'Fig. 5e',description:'Follow measured velocity fields into a conservative vorticity-transport equation, then compare its integrated predictions with withheld experimental observations.',file:'cylinder_wake',source:'Renn et al. · 2026',doi:'10.1038/s41597-026-07368-z'},
@@ -15,7 +15,7 @@ const chineseFilms = [
   ['八个基本偏微分方程','从八类经典系统的观测场出发，展示符号搜索、方程恢复及未参与建模条件下的预测检验。'],
   ['五个开放形式偏微分方程','通过递归组合代数运算与微分运算，揭示从重力流到曲率驱动演化中的嵌套非线性结构。'],
   ['三维欧拉方程','展示共享符号计算如何恢复五条耦合守恒方程，并预测三维可压缩流动。'],
-  ['纳维–斯托克斯与 Gray–Scott 方程','在含噪声或空间稀疏的观测下，展示流动与反应扩散方程的选择及预测检验。'],
+  ['纳维–斯托克斯、Darcy 与 Gray–Scott 方程','展示干净观测下的二维纳维–斯托克斯预测，以及 Darcy 与 Gray–Scott 在噪声和空间稀疏观测下的方程恢复与预测。'],
   ['驻波管实验','从稀疏声压与质点振速测量中恢复耦合声学方程，推导声速及相应的能量守恒关系。'],
   ['MeshRIR 三维声场','从室内实测声场恢复各方向的波动传播，并将反推声速与数据集实测温度折算的声速比较。'],
   ['圆柱尾流','从实测速度场恢复守恒形式的涡量输运方程，并比较方程积分结果与留出的实验观测。'],
@@ -28,7 +28,7 @@ const translations = {
     skip:'Skip to player',supplements:'Supplementary films',collection:'The collection',study:'The study',
     eyebrow:'A visual companion to SPADE',headline:'From fields to equations',
     introFirst:'Watch physical laws emerge from data.',introSecond:'Ten films on symbolic discovery and prediction.',
-    count:'10 films',totalTime:'14 min 19 s',download:'Download film',collectionHeading:'In this collection',
+    count:'10 films',totalTime:'14 min 47 s',download:'Download film',collectionHeading:'In this collection',
     paperFirst:'Discovering partial differential equations',paperSecond:'through shared symbolic computation',
     studyDescription:'SPADE reuses shared symbolic computations to search for governing equations. These films follow the journey from observed fields through equation discovery to validation, across numerical systems and six physical experiments.',
     backTop:'Back to top ↑',numerical:'Numerical systems',physical:'Physical experiments',movie:'Supplementary Movie',
@@ -42,7 +42,7 @@ const translations = {
     skip:'跳转到播放器',supplements:'补充视频',collection:'视频目录',study:'关于研究',
     eyebrow:'SPADE 研究视频',headline:'从观测场到方程',
     introFirst:'看物理规律如何从数据中浮现。',introSecond:'十部视频，呈现方程发现与预测检验。',
-    count:'10 部视频',totalTime:'14 分 19 秒',download:'下载视频',collectionHeading:'视频目录',
+    count:'10 部视频',totalTime:'14 分 47 秒',download:'下载视频',collectionHeading:'视频目录',
     paperFirst:'通过共享符号计算',paperSecond:'发现偏微分方程',
     studyDescription:'SPADE 复用不同候选表达式中的相同计算，寻找支配系统演化的方程。这十部视频覆盖数值系统与六类真实实验，展示从观测场、方程发现到预测检验的全过程。',
     backTop:'返回顶部 ↑',numerical:'数值系统',physical:'真实实验',movie:'补充视频',
@@ -76,7 +76,8 @@ films.forEach((film,index) => {
   button.className='film-choice';
   button.dataset.index=index;
   button.setAttribute('aria-controls','player');
-  button.innerHTML=`<span class="film-number">${number(index)}</span><img src="assets/posters/movie-${number(index)}.jpg" alt="" width="128" height="72" loading="lazy"><span class="film-name"><span class="film-title-text"></span><small>${duration(film.duration)}</small></span><span class="film-arrow" aria-hidden="true">↗</span>`;
+  const revision=index===3?'?v=20261025':'';
+  button.innerHTML=`<span class="film-number">${number(index)}</span><img src="assets/posters/movie-${number(index)}.jpg${revision}" alt="" width="128" height="72" loading="lazy"><span class="film-name"><span class="film-title-text"></span><small>${duration(film.duration)}</small></span><span class="film-arrow" aria-hidden="true">↗</span>`;
   button.addEventListener('click',() => selectFilm(index,true));
   byId('film-list').append(button);
 });
@@ -137,8 +138,9 @@ function selectFilm(index,autoplay=false){
   player.pause();
   player.controls=false;
   selected=index;
-  player.poster=`assets/posters/movie-${number(index)}.jpg`;
-  player.src=`assets/videos/movie-${number(index)}.mp4`;
+  const revision=index===3?'?v=20261025':'';
+  player.poster=`assets/posters/movie-${number(index)}.jpg${revision}`;
+  player.src=`assets/videos/movie-${number(index)}.mp4${revision}`;
   playButton.hidden=false;
   renderFilmText();
   byId('film-duration').textContent=duration(film.duration);
