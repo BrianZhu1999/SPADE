@@ -229,5 +229,5 @@
   },
   "data_sha256": "076ea3e2f45dee57026b588e2d103b1a084237962dfa75dd08a46a11799ba73e",
   "adapter_sha256": "9b65edc228f8bb0b77559aa0c93633fe38f97a1b43ed751b0a76421db8c161b9",
-  "historical_use": "standing-wave tube 385 Hz long6000 development search; first202 preserved"
+  "historical_use": "385 Hz equation discovery using samples [100, 6100), divided into 30 contiguous 200-sample blocks."
 }
