@@ -1,8 +1,8 @@
 {
   "label": "sheet2_physical_20251224_u_position",
-  "path": "/media/zzy/raid5/physics_law_discovery_20261013/mrsm_tube/sparse12_calibrated_20261014/sheet2_physical_20251224_u_position.npy",
+  "array_source_filename": "sheet2_physical_20251224_u_position.npy",
   "data_sha256": "cc2809524aeac61a4c48e09f60b56ead616647b46aa72a6c311b6d03d2fb90d6",
-  "raw_path": "/media/zzy/raid5/数据集总库/01_实验测量/驻波管实验结果/驻波管矢量实验/RecordData/20251223pu/pu385.mat",
+  "raw_source_filename": "pu385.mat",
   "raw_sha256": "bcf83dae161fdacab26eb07e9f03c3f654369c67c38d85c6ddd70cfac238102d",
   "shape": [
     1,
@@ -10,11 +10,10 @@
     2,
     15
   ],
-  "calibration_dir": "/media/zzy/raid5/驻波管实验结果/驻波管矢量实验/GUI_20251224/GUI_20251224",
-  "script_path": "/media/zzy/raid5/physics_law_discovery_20261013/mrsm_tube/sparse12_calibrated_20261014/scripts/build_corrected_sheet2.py",
+  "calibration_dir": ".",
+  "script_source_filename": "build_corrected_sheet2.py",
   "script_sha256": "73788e9722af442c5314e6cf624c5de449f3a5d25ff78bc2e662de1f421c6dc3",
   "device": {
-    "hostname": "Super-Server",
     "platform": "Linux-7.0.0-30-generic-x86_64-with-glibc2.39",
     "python": "3.12.2"
   },
@@ -52,7 +51,7 @@
   "phase_rotation_assert_max_abs_error": 1.307343122647353e-12,
   "calibration_records": [
     {
-      "workbook_path": "/media/zzy/raid5/驻波管实验结果/驻波管矢量实验/GUI_20251224/GUI_20251224/Tube2.xls",
+      "workbook_path": "Tube2.xls",
       "workbook_sha256": "1ecf82476299a07d2f181bfa9a6c5110bea600c4f2d1dfc713122ca7accd09e2",
       "sheet": 1,
       "calibration_position": "U",
@@ -79,7 +78,7 @@
       "factor_imag": -12.903827513772791
     },
     {
-      "workbook_path": "/media/zzy/raid5/驻波管实验结果/驻波管矢量实验/GUI_20251224/GUI_20251224/Tube2.xls",
+      "workbook_path": "Tube2.xls",
       "workbook_sha256": "1ecf82476299a07d2f181bfa9a6c5110bea600c4f2d1dfc713122ca7accd09e2",
       "sheet": 2,
       "calibration_position": "U",
@@ -106,7 +105,7 @@
       "factor_imag": 0.017421093978554566
     },
     {
-      "workbook_path": "/media/zzy/raid5/驻波管实验结果/驻波管矢量实验/GUI_20251224/GUI_20251224/Tube4.xls",
+      "workbook_path": "Tube4.xls",
       "workbook_sha256": "1ee0ac95ebc2e3b2e971dda81ef9b2fcaef1934253779bd17bd4bec8efd8849a",
       "sheet": 1,
       "calibration_position": "U",
@@ -133,7 +132,7 @@
       "factor_imag": -3.6948973896471085
     },
     {
-      "workbook_path": "/media/zzy/raid5/驻波管实验结果/驻波管矢量实验/GUI_20251224/GUI_20251224/Tube4.xls",
+      "workbook_path": "Tube4.xls",
       "workbook_sha256": "1ee0ac95ebc2e3b2e971dda81ef9b2fcaef1934253779bd17bd4bec8efd8849a",
       "sheet": 2,
       "calibration_position": "U",
@@ -160,7 +159,7 @@
       "factor_imag": 0.004913990306720233
     },
     {
-      "workbook_path": "/media/zzy/raid5/驻波管实验结果/驻波管矢量实验/GUI_20251224/GUI_20251224/Tube5.xls",
+      "workbook_path": "Tube5.xls",
       "workbook_sha256": "71f39c260f91dc0e9204f7c08d49dc4837d53355c5ed790857accb985c143894",
       "sheet": 1,
       "calibration_position": "U",
@@ -187,7 +186,7 @@
       "factor_imag": -10.05083817843813
     },
     {
-      "workbook_path": "/media/zzy/raid5/驻波管实验结果/驻波管矢量实验/GUI_20251224/GUI_20251224/Tube5.xls",
+      "workbook_path": "Tube5.xls",
       "workbook_sha256": "71f39c260f91dc0e9204f7c08d49dc4837d53355c5ed790857accb985c143894",
       "sheet": 2,
       "calibration_position": "U",
@@ -214,7 +213,7 @@
       "factor_imag": 0.003956850706911394
     },
     {
-      "workbook_path": "/media/zzy/raid5/驻波管实验结果/驻波管矢量实验/GUI_20251224/GUI_20251224/Tube6.xls",
+      "workbook_path": "Tube6.xls",
       "workbook_sha256": "71ff6ee34397bb9f161eb50759cd6c50872e198f76f9f31663cd3ca3f60878bb",
       "sheet": 1,
       "calibration_position": "U",
@@ -241,7 +240,7 @@
       "factor_imag": -12.05093454647794
     },
     {
-      "workbook_path": "/media/zzy/raid5/驻波管实验结果/驻波管矢量实验/GUI_20251224/GUI_20251224/Tube6.xls",
+      "workbook_path": "Tube6.xls",
       "workbook_sha256": "71ff6ee34397bb9f161eb50759cd6c50872e198f76f9f31663cd3ca3f60878bb",
       "sheet": 2,
       "calibration_position": "U",
@@ -268,7 +267,7 @@
       "factor_imag": 0.003993530393494305
     },
     {
-      "workbook_path": "/media/zzy/raid5/驻波管实验结果/驻波管矢量实验/GUI_20251224/GUI_20251224/Tube7.xls",
+      "workbook_path": "Tube7.xls",
       "workbook_sha256": "25710f24ba19afd52a3e4e3b5676b066fdbed371e07ea3b1535a5d8f73a55db7",
       "sheet": 1,
       "calibration_position": "U",
@@ -295,7 +294,7 @@
       "factor_imag": -12.220795306561804
     },
     {
-      "workbook_path": "/media/zzy/raid5/驻波管实验结果/驻波管矢量实验/GUI_20251224/GUI_20251224/Tube7.xls",
+      "workbook_path": "Tube7.xls",
       "workbook_sha256": "25710f24ba19afd52a3e4e3b5676b066fdbed371e07ea3b1535a5d8f73a55db7",
       "sheet": 2,
       "calibration_position": "U",
@@ -322,7 +321,7 @@
       "factor_imag": 0.006362382157258914
     },
     {
-      "workbook_path": "/media/zzy/raid5/驻波管实验结果/驻波管矢量实验/GUI_20251224/GUI_20251224/Tube8.xls",
+      "workbook_path": "Tube8.xls",
       "workbook_sha256": "6e647da66ee45430580f38d172cf574f2b391fb5ce99a7c8617bd1ff1c010bce",
       "sheet": 1,
       "calibration_position": "U",
@@ -349,7 +348,7 @@
       "factor_imag": -15.337649418847937
     },
     {
-      "workbook_path": "/media/zzy/raid5/驻波管实验结果/驻波管矢量实验/GUI_20251224/GUI_20251224/Tube8.xls",
+      "workbook_path": "Tube8.xls",
       "workbook_sha256": "6e647da66ee45430580f38d172cf574f2b391fb5ce99a7c8617bd1ff1c010bce",
       "sheet": 2,
       "calibration_position": "U",
@@ -376,7 +375,7 @@
       "factor_imag": 0.005175632741306636
     },
     {
-      "workbook_path": "/media/zzy/raid5/驻波管实验结果/驻波管矢量实验/GUI_20251224/GUI_20251224/Tube9.xls",
+      "workbook_path": "Tube9.xls",
       "workbook_sha256": "795da9c128dfc5c72c46072fa9b52e040c9b65fca0c54a732d375f26c9f012c3",
       "sheet": 1,
       "calibration_position": "U",
@@ -403,7 +402,7 @@
       "factor_imag": -2.2941384893622647
     },
     {
-      "workbook_path": "/media/zzy/raid5/驻波管实验结果/驻波管矢量实验/GUI_20251224/GUI_20251224/Tube9.xls",
+      "workbook_path": "Tube9.xls",
       "workbook_sha256": "795da9c128dfc5c72c46072fa9b52e040c9b65fca0c54a732d375f26c9f012c3",
       "sheet": 2,
       "calibration_position": "U",
@@ -430,7 +429,7 @@
       "factor_imag": 0.007421562188417415
     },
     {
-      "workbook_path": "/media/zzy/raid5/驻波管实验结果/驻波管矢量实验/GUI_20251224/GUI_20251224/Tube11.xls",
+      "workbook_path": "Tube11.xls",
       "workbook_sha256": "34932adc9d236229a9a64167505f8a962613a857031bb4317308cf79ec0c38b1",
       "sheet": 1,
       "calibration_position": "U",
@@ -457,7 +456,7 @@
       "factor_imag": -2.851893543200708
     },
     {
-      "workbook_path": "/media/zzy/raid5/驻波管实验结果/驻波管矢量实验/GUI_20251224/GUI_20251224/Tube11.xls",
+      "workbook_path": "Tube11.xls",
       "workbook_sha256": "34932adc9d236229a9a64167505f8a962613a857031bb4317308cf79ec0c38b1",
       "sheet": 2,
       "calibration_position": "U",
@@ -484,7 +483,7 @@
       "factor_imag": 0.004975276438696642
     },
     {
-      "workbook_path": "/media/zzy/raid5/驻波管实验结果/驻波管矢量实验/GUI_20251224/GUI_20251224/Tube12.xls",
+      "workbook_path": "Tube12.xls",
       "workbook_sha256": "14293a6c4a27630da8b40441aadadc8e99a025872a3033dad0a37dc0bbe38d70",
       "sheet": 1,
       "calibration_position": "U",
@@ -511,7 +510,7 @@
       "factor_imag": 10.626887154110507
     },
     {
-      "workbook_path": "/media/zzy/raid5/驻波管实验结果/驻波管矢量实验/GUI_20251224/GUI_20251224/Tube12.xls",
+      "workbook_path": "Tube12.xls",
       "workbook_sha256": "14293a6c4a27630da8b40441aadadc8e99a025872a3033dad0a37dc0bbe38d70",
       "sheet": 2,
       "calibration_position": "U",
@@ -538,7 +537,7 @@
       "factor_imag": 0.007939006478627776
     },
     {
-      "workbook_path": "/media/zzy/raid5/驻波管实验结果/驻波管矢量实验/GUI_20251224/GUI_20251224/Tube13.xls",
+      "workbook_path": "Tube13.xls",
       "workbook_sha256": "c14a6b6324337c09ed62bb5692f314176a0de7f132cd7ca10ca3cd9db98321fd",
       "sheet": 1,
       "calibration_position": "U",
@@ -565,7 +564,7 @@
       "factor_imag": -2.1392027344843423
     },
     {
-      "workbook_path": "/media/zzy/raid5/驻波管实验结果/驻波管矢量实验/GUI_20251224/GUI_20251224/Tube13.xls",
+      "workbook_path": "Tube13.xls",
       "workbook_sha256": "c14a6b6324337c09ed62bb5692f314176a0de7f132cd7ca10ca3cd9db98321fd",
       "sheet": 2,
       "calibration_position": "U",
@@ -592,7 +591,7 @@
       "factor_imag": 0.0070042268114682785
     },
     {
-      "workbook_path": "/media/zzy/raid5/驻波管实验结果/驻波管矢量实验/GUI_20251224/GUI_20251224/Tube14.xls",
+      "workbook_path": "Tube14.xls",
       "workbook_sha256": "9cae7fabed664ccab779c70dd42cfc15c0c32c467f86a29178e11ad280855aaa",
       "sheet": 1,
       "calibration_position": "U",
@@ -619,7 +618,7 @@
       "factor_imag": 10.410616786549497
     },
     {
-      "workbook_path": "/media/zzy/raid5/驻波管实验结果/驻波管矢量实验/GUI_20251224/GUI_20251224/Tube14.xls",
+      "workbook_path": "Tube14.xls",
       "workbook_sha256": "9cae7fabed664ccab779c70dd42cfc15c0c32c467f86a29178e11ad280855aaa",
       "sheet": 2,
       "calibration_position": "U",
@@ -646,7 +645,7 @@
       "factor_imag": 0.008606712035149483
     },
     {
-      "workbook_path": "/media/zzy/raid5/驻波管实验结果/驻波管矢量实验/GUI_20251224/GUI_20251224/Tube15.xls",
+      "workbook_path": "Tube15.xls",
       "workbook_sha256": "8624f1b1c3c96c0f9c060cf3a40f6f7db7798153901997ab947a34204b3e7fad",
       "sheet": 1,
       "calibration_position": "U",
@@ -673,7 +672,7 @@
       "factor_imag": -4.819232486790546
     },
     {
-      "workbook_path": "/media/zzy/raid5/驻波管实验结果/驻波管矢量实验/GUI_20251224/GUI_20251224/Tube15.xls",
+      "workbook_path": "Tube15.xls",
       "workbook_sha256": "8624f1b1c3c96c0f9c060cf3a40f6f7db7798153901997ab947a34204b3e7fad",
       "sheet": 2,
       "calibration_position": "U",

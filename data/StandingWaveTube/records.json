@@ -101,5 +101,5 @@
     }
   },
   "forward_protocol": "first sample supplies the initial field; subsequent measured incoming boundary characteristics at the two endpoint probes are supplied; ten interior probes are scored",
-  "packaging": "Selected the 12 valid measured probes and losslessly compressed the calibrated float64 fields; no interpolation, denoising or additional amplitude scaling. observations.npz and metadata.json are unchanged copies of the original 385 Hz search input."
+  "packaging": "Selected the 12 valid measured probes and losslessly compressed the calibrated float64 fields; no interpolation, denoising or additional amplitude scaling. observations.npz preserves the original 385 Hz search input; metadata.json describes its data partitions and processing."
 }

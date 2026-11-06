@@ -7,9 +7,9 @@ Calibrated experimental pressure and axial particle velocity used in the SPADE s
 | File | Contents |
 | --- | --- |
 | `record_385Hz.npz`, `record_395Hz.npz` | Complete 5 s calibrated records at the 12 valid measured probe positions |
-| `observations.npz`, `metadata.json` | Unchanged 385 Hz search input and its original partition metadata |
+| `observations.npz`, `metadata.json` | 385 Hz search input and its data-partition metadata |
 | `records.json` | Units, coordinates, record hashes and evaluation intervals |
-| `calibration/calibration_385Hz.json`, `calibration/calibration_395Hz.json` | Original calibration manifests, including complex correction factors and source hashes |
+| `calibration/calibration_385Hz.json`, `calibration/calibration_395Hz.json` | Calibration records, including complex correction factors and source-file hashes |
 | `calibration/Tube*.xls` | The 12 probe-response workbooks used for calibration |
 | `SHA256SUMS` | SHA-256 checksums of all other files in this directory |
 
@@ -39,4 +39,4 @@ The later 385 Hz weak-equation test uses samples `[10000, 11200)`. The independe
 
 Calibration uses the 2025-12-24 response tables at the U calibration position. Sheet1 stores pressure sensitivity in mV/Pa; Sheet2 stores velocity sensitivity in V/(m/s). Both store phase in radians. Positive-frequency pressure spectra are multiplied by `1000/S_p * exp(-1j*phi_p)`. Velocity spectra are multiplied by `1/S_v * exp(1j*(pi/2-phi_v))`, accounting for the standing-wave phase included in the original velocity-response tables. Here `S_p` and `S_v` are the tabulated sensitivities and `phi_p` and `phi_v` the tabulated phases. The manifests record each probe's correction factor at the corresponding excitation frequency. Calibration precedes resampling from 12,800 to 10,000 Hz.
 
-The complete-record archives select the 12 valid probes from the original calibrated arrays and compress them without changing their values. No interpolation, denoising or additional amplitude scaling is applied. The original arrays, raw-voltage records and calibration workbooks are identified by SHA-256 in the manifests. Historical server paths in those manifests record provenance; reading the published archives requires only NumPy.
+The complete-record archives contain the 12 valid measured probes and preserve the calibrated values through lossless compression. The JSON files identify original source arrays, raw-voltage records and calibration scripts by their `*_source_filename` fields and associated hashes. Workbook paths are relative to the calibration JSON file that contains them. `SHA256SUMS` lists the checksums of the supplied files.

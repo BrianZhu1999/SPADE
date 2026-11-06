@@ -2,3 +2,6 @@ metadata.json -text
 calibration/calibration_*.json -text
 *.xls binary
 SHA256SUMS text eol=lf
+.gitattributes text eol=lf
+README.md text eol=lf
+records.json text eol=lf

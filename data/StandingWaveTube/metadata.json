@@ -115,10 +115,10 @@
     }
   },
   "source": {
-    "parent_calibrated_array": "/media/zzy/raid5/physics_law_discovery_20261013/mrsm_tube/sparse12_calibrated_20261014/sheet2_physical_20251224_u_position.npy",
+    "parent_array_source_filename": "sheet2_physical_20251224_u_position.npy",
     "parent_sha256": "cc2809524aeac61a4c48e09f60b56ead616647b46aa72a6c311b6d03d2fb90d6",
-    "calibration_manifest": "/media/zzy/raid5/physics_law_discovery_20261013/mrsm_tube/sparse12_calibrated_20261014/sheet2_physical_manifest.json",
-    "calibration_manifest_sha256": "acb7ddb7f8a75ff44bfe3c7eeddbd7bffdebad1fff99f09edf7c381e8781240f",
+    "calibration_manifest_source_filename": "sheet2_physical_manifest.json",
+    "calibration_manifest_source_sha256": "acb7ddb7f8a75ff44bfe3c7eeddbd7bffdebad1fff99f09edf7c381e8781240f",
     "observation_type": "Original 12 measured coordinates after externally frozen probe calibration",
     "frequency_Hz": 385,
     "channel_unit_convention": "Pa/m/s",
@@ -219,7 +219,7 @@
       ]
     },
     "windowing": "30 non-overlapping contiguous 200-frame blocks; all 6000 frames retained",
-    "calibration_input": "/media/zzy/raid5/physics_law_discovery_20261013/mrsm_tube/sparse12_calibrated_20261014/sheet2_physical_20251224_u_position.npy",
+    "calibration_input_source_filename": "sheet2_physical_20251224_u_position.npy",
     "fixed_channel_gains": [
       1.0,
       1.0
